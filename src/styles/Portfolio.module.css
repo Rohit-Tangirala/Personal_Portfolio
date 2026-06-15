@@ -1,0 +1,72 @@
+.heroTitle {
+  font-family: var(--font-serif);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.projectName {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.metaText {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.borderDivider {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cardGlow {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardGlow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255, 255, 255, 0.04), transparent 40%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.interactiveButton {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+  will-change: transform;
+}
+
+.interactiveButton:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.techTag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.marqueeContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.marqueeContent {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}

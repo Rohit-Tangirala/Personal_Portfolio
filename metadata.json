@@ -1,0 +1,6 @@
+{
+  "name": "Animated Developer Portfolio",
+  "description": "The professional student developer portfolio of T.G.S.S. Rohit, featuring GSAP, Lenis, and Framer Motion, with database integrations via MySQL and Express.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
