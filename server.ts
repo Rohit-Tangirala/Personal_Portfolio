@@ -3,13 +3,9 @@ import path from "path";
 import cors from "cors";
 import mysql from "mysql2/promise";
 import { createServer as createViteServer } from "vite";
-import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 
 dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
